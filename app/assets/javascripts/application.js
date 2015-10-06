@@ -15,3 +15,11 @@
 //= require angular
 // require turbolinks
 //= require_tree .
+
+
+
+$(document).ready(function(){
+  $('.js-menu-button').click(function(){
+    $('.js-menu-dd').slideToggle('slow');
+  });
+});

@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.js-menu-dd {
+ background-color: #353535;
+ position: relative;
+ display: none;
+}
+
+.nav-menu-dd-text {
+ color: white;
+ font-family: 'Raleway', sans-serif;
+ letter-spacing: 0.05em;
+ margin-bottom: 1.5em;
+ margin-left: 1em;
+ display: inline-block;
+}
+
+.nav_row {
+  background-color: #353535;
+  position: relative;
+}
+
+.glyphicon {
+  font-size: 2.9em;
+  margin-top: 0.3em;
+  color: white;
+}
+
+.nav_text {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.border_under_nav {
+  height: 0.5em;
+  background-color: #424242;
+  margin-top: -0.1em;
+}
