@@ -7,6 +7,7 @@ Rails.application.routes.draw do
 
   get '/for_men' => 'pages#for_men'
   get '/vip' => 'pages#vip'
+  get '/international' => 'pages#international'
 
 
   # Messages Controller

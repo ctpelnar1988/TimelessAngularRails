@@ -13,4 +13,7 @@ class PagesController < ApplicationController
   def vip
   end
 
+  def international
+  end
+
 end
