@@ -1,0 +1,32 @@
+.vip_header {
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 9px black;
+}
+
+.red_carpet_image {
+  width:100%;
+}
+
+table, th, td {
+    border: 0.2em solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+table {
+  margin-bottom: 2em;
+}
+
+.gold_membership_th {
+  font-family: 'Merriweather', serif;
+  color: black;
+}
+
+.platinum_membership_th {
+  font-family: 'Merriweather', serif;
+  color: black;
+}

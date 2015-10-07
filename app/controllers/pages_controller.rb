@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   def for_men
   end
+
+  def vip
+  end
+
 end

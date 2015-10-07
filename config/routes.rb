@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about'
 
   get '/for_men' => 'pages#for_men'
+  get '/vip' => 'pages#vip'
 
 
   # Messages Controller
