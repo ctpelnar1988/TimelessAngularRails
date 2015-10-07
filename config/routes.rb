@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Pages Controller
   get '/' => 'pages#index'
+  get '/about' => 'pages#about'
 
 
   # Messages Controller

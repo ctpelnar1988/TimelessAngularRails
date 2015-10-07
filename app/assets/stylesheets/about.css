@@ -1,0 +1,48 @@
+.about_header {
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 9px black;
+}
+
+.about_page_top_info_header {
+  margin-top: 2em;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0px 15px white;
+}
+
+.about_container {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  background-color: rgb(66, 66, 66);
+}
+
+.perfect_skin_image {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.about_description_1 {
+  padding: 1em;
+  letter-spacing: 0.05em;
+}
+
+.dr_solomon_image {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.about_description_2 {
+  padding: 1em;
+  letter-spacing: 0.05em;
+}
+
+.about_memberships_header {
+  margin-top: 2em;
+  letter-spacing: 0.1em;
+  text-shadow: 0px 0px 15px white;
+}
+
+.about_memberships_text {
+  padding: 1em;
+  letter-spacing: 0.05em;
+}
