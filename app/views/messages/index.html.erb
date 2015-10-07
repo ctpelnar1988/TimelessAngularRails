@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row text-center">
+    <h1 class="contact_header">Contact</h1>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <p class="contact_address_text"><strong>Timeless Esthetics</strong><br>
+    1056 E.Osceola Parkway<br>
+    Kissimmee FL, 34741</p>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row text-center">
+    <p class="contact_page_message">Have a question? We will have a member of our staff contact you back within 24 hours!</p>
+  </div>
+</div>
+
+<div class="container-fluid contact_form_container">
+  <div class="row text-center">
+      <%= form_for(@message) do |f| %>
+      <%= f.label :name, :class => "message_default_label" %><br>
+      <%= f.text_field :name, :class => "message_default_input", :placeholder => " Name" %>
+      <br>
+      <br>
+      <%= f.label :email, :class => "message_default_label" %><br>
+      <%= f.text_field :email, :class => "message_default_input", :placeholder => " Email" %>
+      <br>
+      <br>
+      <%= f.label :phone_number, :class => "message_default_label" %><br>
+      <%= f.text_field :phone_number, :class => "message_default_input", :placeholder => " Phone Number" %>
+      <br>
+      <br>
+      <%= f.label :question, :class => "message_default_label" %><br>
+      <%= f.text_area :user_message, :class => "message_user_message_input", :placeholder => " Question" %>
+      <br>
+      <br>
+      <%= f.submit "Send", :class => "contact_send_button" %>
+      <% end %>
+  </div>
+</div>
