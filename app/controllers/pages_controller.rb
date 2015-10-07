@@ -4,4 +4,9 @@ class PagesController < ApplicationController
 
   def about
   end
+
+
+
+  def for_men
+  end
 end

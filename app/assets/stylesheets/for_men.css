@@ -1,0 +1,41 @@
+.for_men_header {
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 9px black;
+}
+
+.for_men_procedure_containers {
+  background-color: rgb(66, 66, 66);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.for_men_procedure_containers_2 {
+  background-color: rgb(66, 66, 66);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.05em;
+  margin-top: 2em;
+}
+
+.for_men_hero_image {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.for_men_procedure_title {
+  text-shadow: 0px 0px 15px white;
+}
+
+.for_men_procedure_description {
+  padding: 1em;
+}
+
+a.morelink {
+  text-decoration:none;
+  outline: none;
+  color: #5C9AFF;
+}
+.morecontent span {
+  display: none;
+}
