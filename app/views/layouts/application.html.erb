@@ -18,7 +18,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid js-menu-dd-container">
     <div class="row js-menu-dd">
       <div>
         <a href="#"><h4 class="nav-menu-dd-text">Home</h4></a>
@@ -76,8 +76,26 @@
     <div class="row border_under_nav"></div>
   </div>
 
+  <div class="container-fluid">
+  <div class="row text-center main_logo_phone_number_row">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-10">
+      <img class="application_page_main_logo" src="/assets/timelessEstheticsMainLogo.jpg">
+      <div class="phone_number_div">
+        <p class="phone_number_digits">(407)-242-2433</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <%= yield %>
 
+
+<div class="container-fluid">
+  <div class="row">
+    <img class="venus_freeze_footer" src="/assets/venusFreezeIcon.jpg">
+  </div>
+</div>
 
 <!-- JavaScript -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

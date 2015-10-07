@@ -18,10 +18,14 @@ a:hover {
   text-decoration: none;
 }
 
+.js-menu-dd-container {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
 
 .js-menu-dd {
  background-color: #353535;
- position: relative;
  display: none;
 }
 
@@ -37,6 +41,8 @@ a:hover {
 .nav_row {
   background-color: #353535;
   position: relative;
+  z-index: 1;
+  margin-top: -0.1em;
 }
 
 .glyphicon {
@@ -55,4 +61,32 @@ a:hover {
   height: 0.5em;
   background-color: #424242;
   margin-top: -0.1em;
+}
+
+.main_logo_phone_number_row {
+  margin-top: 6em;
+}
+
+.application_page_main_logo {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.phone_number_div {
+  background-color: grey;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3em;
+}
+
+.phone_number_digits {
+  padding-top: 0.1em;
+  padding-bottom: 0.5em;
+  text-shadow: 0px 3px 7px black;
+}
+
+.venus_freeze_footer {
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
