@@ -1,16 +1,17 @@
 .contact_header {
-  font-family: 'Raleway', sans-serif;
   text-shadow: 0px 0px 9px black;
 }
 
 .contact_address_text {
   font-size: 1.1em;
   margin-top: 1em;
+}
+
+.contact_page_get_directions_link {
   margin-bottom: 2em;
 }
 
 .contact_page_message {
-font-family: 'Raleway', sans-serif;
 font-size: 1.5em;
 padding-left: 1em;
 padding-right: 1em;

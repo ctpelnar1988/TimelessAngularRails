@@ -5,7 +5,8 @@ class PagesController < ApplicationController
   def about
   end
 
-
+  def procedures
+  end
 
   def for_men
   end
@@ -22,4 +23,6 @@ class PagesController < ApplicationController
   def gallery
   end
 
+  def location
+  end
 end

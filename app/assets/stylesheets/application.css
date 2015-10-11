@@ -14,6 +14,10 @@
  *= require_self
  */
 
+body {
+ font-family: 'Raleway', sans-serif;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -31,7 +35,6 @@ a:hover {
 
 .nav-menu-dd-text {
  color: white;
- font-family: 'Raleway', sans-serif;
  letter-spacing: 0.05em;
  margin-bottom: 1.5em;
  margin-left: 1em;
@@ -53,7 +56,6 @@ a:hover {
 
 .nav_text {
   color: white;
-  font-family: 'Raleway', sans-serif;
   letter-spacing: 0.05em;
 }
 
