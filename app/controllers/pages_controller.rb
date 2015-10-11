@@ -16,4 +16,7 @@ class PagesController < ApplicationController
   def international
   end
 
+  def media
+  end
+
 end
