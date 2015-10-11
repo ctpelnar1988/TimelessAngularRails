@@ -19,4 +19,7 @@ class PagesController < ApplicationController
   def media
   end
 
+  def gallery
+  end
+
 end

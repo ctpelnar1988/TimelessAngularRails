@@ -1,0 +1,14 @@
+.gallery_heading {
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 0px 0px 9px black;
+}
+
+.below_gallery_header_text  {
+font-family: 'Raleway', sans-serif;
+margin-bottom: 1.5em;
+}
+
+.default_before_after_images {
+  width: 100%;
+  margin-bottom: 2em;
+}
