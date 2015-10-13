@@ -9,6 +9,7 @@
   text-align: center;
   width: 100%;
   text-shadow: 0px 0px 10px white;
+  color: black;
 }
 
 .procedure_image {
@@ -24,4 +25,5 @@
   text-align: right;
   width: 100%;
   text-shadow: 0px 0px 5px white;
+  color: black;
 }

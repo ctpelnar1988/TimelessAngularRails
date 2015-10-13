@@ -1,0 +1,108 @@
+<!-- <div ng-controller="MyController">
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="blogs_home_heading">Timeless Esthetics: Blogs</h2>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- Search -->
+<!-- <div class="container-fluid">
+  <div class="row text-center">
+    <div class="col-xs-12">
+    <h1>Search Blogs</h1>
+    <input type="text" ng-model="search_blogs" autofocus>
+  </div>
+</div>
+   <div class="row text-center">
+    <div class="col-xs-12">
+    <ul ng-show="search_blogs">
+      <li ng-repeat="blog in blogs | filter: search_blogs | xFutureDates">
+        <a href='{{blog.year_id}}'>{{blog.title}}</a>
+        <br>
+        <br>
+      </li>
+    </ul>
+    </div>
+  </div>
+</div> -->
+
+
+
+  <!-- Recent Blogs -->
+<!--   <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+      <h1>Recent Blogs</h1>
+      <h5 ng-repeat="blog in blogs | recentMonths | limitTo:10">
+        {{blog.title}}
+        <br>
+        <br>
+      </h5>
+      </div>
+    </div>
+  </div>
+
+ -->
+  <!-- Blog Archives/Categories/Recent -->
+<!--   <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+
+</div> -->
+
+
+<div ng-controller="MyController">
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h4 class="search_blogs_heading">Search Blogs</h4>
+        <input type="text" class="search_blogs_input" ng-model="search_blogs" autofocus>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 blog_search_div" ng-repeat="blog in blogs | xFutureDates | filter: search_blogs | limitTo:10" ng-show="search_blogs">
+        <br>
+        <br>
+        <a href="{{blog.link}}">
+          <p class="blog_search_date">{{blog.date}}</p>
+          <p class="blog_search_title">{{blog.title}}</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <img class="spa_room_image" src="/assets/SpaTreatmentRoom.jpg">
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h4 class="recent_blogs_heading">Recent Blogs</h4>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+      <div ng-repeat="blog in blogs | recentMonths | limitTo:10">
+        <a href="{{blog.link}}">
+          <p class="blog_recentBlogs_date">{{blog.date}}</p>
+          <p class="blog_recentBlogs_title">{{blog.title}}</p>
+          <p class="blog_recentBlogs_description">{{blog.description.trunc(140)}}</p>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+
+</div>
