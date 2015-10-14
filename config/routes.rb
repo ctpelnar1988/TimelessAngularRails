@@ -14,7 +14,9 @@ Rails.application.routes.draw do
 
 
   # Messages Controller
-  get '/contact' => 'messages#contact'
+get '/contact' => 'messages#new'
+post 'message_sent' => 'messages#create'
+get '/message_sent' => 'messages#show'
 
   # Blogs Controller
   get '/blogs_home' => 'blogs#blog_home'

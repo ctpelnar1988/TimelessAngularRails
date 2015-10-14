@@ -24,7 +24,7 @@
   <div class="row text-center">
       <%= form_for(@message) do |f| %>
       <%= f.label :name, :class => "message_default_label" %><br>
-      <%= f.text_field :name, :class => "message_default_input", :placeholder => " Name" %>
+      <%= f.text_field :name, :class => "message_default_input", :placeholder => " Name", :autofocus => true %>
       <br>
       <br>
       <%= f.label :email, :class => "message_default_label" %><br>

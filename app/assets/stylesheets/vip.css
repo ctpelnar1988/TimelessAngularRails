@@ -29,3 +29,7 @@ table {
   font-family: 'Merriweather', serif;
   color: black;
 }
+
+.vip_price {
+  font-size: 1.3em;
+}
