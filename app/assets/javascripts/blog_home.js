@@ -46,13 +46,10 @@ myApp.filter('xFutureDates', [function() {
             year      = today.getFullYear();
 
         angular.forEach(array, function(item, index) {
-           if (item.year_id === year) {
-            if (item.month_id <= thisMonth){
-              if (item.day_id <= thisDay){
-               this.push(item);
-              }
-            }
+           if (item.month_id === thisMonth && item.day_id > thisDay) {
+            null;
            }
+               this.push(item);
         }, results);
 
         return results;
@@ -63,3 +60,4 @@ myApp.filter('xFutureDates', [function() {
 
 
 
+// if !(month == thisMonth and date <= thisDay

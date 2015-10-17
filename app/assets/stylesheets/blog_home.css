@@ -3,8 +3,7 @@
 }
 
 .blog_search_div {
-  background-color: grey;
-  padding-bottom: 1em;
+  background-color: #D3BFBF;
   margin-top: -0.3em;
   border-radius: 4px;
 }
@@ -24,7 +23,7 @@
 .blog_search_title {
   font-size: 1.1em;
   margin-top: -0.5em;
-  color: #0031FF;
+  color: #FF8F8F;
   background-color: black;
   padding: 0.5em;
   letter-spacing: 0.03em;
@@ -53,7 +52,7 @@
 .blog_recentBlogs_title {
   font-size: 1.1em;
   margin-top: -0.5em;
-  color: #00A7FF;
+  color: #0F8591;
   letter-spacing: 0.03em;
   background-color: black;
   padding: 0.5em;

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :messages
 
   # Pages Controller
-  get '/' => 'pages#index'
+  root 'pages#index'
   get '/about' => 'pages#about'
   get '/procedures' => 'pages#procedures'
   get '/for_men' => 'pages#for_men'
@@ -19,5 +19,5 @@ post 'message_sent' => 'messages#create'
 get '/message_sent' => 'messages#show'
 
   # Blogs Controller
-  get '/blogs_home' => 'blogs#blog_home'
+  get '/blogs_home' => 'blogs#index'
 end

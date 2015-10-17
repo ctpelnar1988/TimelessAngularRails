@@ -1,6 +1,6 @@
 class BlogsController < ApplicationController
 
-  def blog_home
+  def index
   end
 
 end
