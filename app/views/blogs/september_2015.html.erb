@@ -1,0 +1,23 @@
+<div ng-controller="BlogController">
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h1>September 2015</h1>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul>
+          <li ng-repeat="blog in blogs | onlySeptember2015">
+            <p>{{blog.date}}</p>
+            <p>{{blog.title}}</p>
+            <p>{{blog.description.trunc(150)}}Read More</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>

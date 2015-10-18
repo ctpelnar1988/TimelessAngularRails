@@ -1,61 +1,4 @@
-<!-- <div ng-controller="MyController">
-
-  <div class="container-fluid">
-    <div class="row text-center">
-      <div class="col-xs-12">
-        <h2 class="blogs_home_heading">Timeless Esthetics: Blogs</h2>
-      </div>
-    </div>
-  </div> -->
-
-  <!-- Search -->
-<!-- <div class="container-fluid">
-  <div class="row text-center">
-    <div class="col-xs-12">
-    <h1>Search Blogs</h1>
-    <input type="text" ng-model="search_blogs" autofocus>
-  </div>
-</div>
-   <div class="row text-center">
-    <div class="col-xs-12">
-    <ul ng-show="search_blogs">
-      <li ng-repeat="blog in blogs | filter: search_blogs | xFutureDates">
-        <a href='{{blog.year_id}}'>{{blog.title}}</a>
-        <br>
-        <br>
-      </li>
-    </ul>
-    </div>
-  </div>
-</div> -->
-
-
-
-  <!-- Recent Blogs -->
-<!--   <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-12">
-      <h1>Recent Blogs</h1>
-      <h5 ng-repeat="blog in blogs | recentMonths | limitTo:10">
-        {{blog.title}}
-        <br>
-        <br>
-      </h5>
-      </div>
-    </div>
-  </div>
-
- -->
-  <!-- Blog Archives/Categories/Recent -->
-<!--   <div class="container-fluid">
-    <div class="row">
-    </div>
-  </div>
-
-</div> -->
-
-
-<div ng-controller="MyController">
+<div ng-controller="BlogController">
 
   <div class="container-fluid">
     <div class="row text-center">
@@ -67,7 +10,7 @@
     </div>
     <div class="row">
      <div class="col-xs-12">
-      <div class="col-xs-12 blog_search_div" ng-repeat="blog in blogs | xFutureDates | filter: search_blogs | limitTo:10" ng-show="search_blogs">
+      <div class="col-xs-12 blog_search_div" ng-repeat="blog in blogs | filter: search_blogs | xFutureDates | limitTo: 15" ng-show="search_blogs">
         <br>
         <br>
         <a href="{{blog.link}}">
@@ -147,28 +90,20 @@
   <div class="row text-left">
     <div class="col-xs-12">
       <ul>
-         <li><h5><a href="#">September 2015</a></h5></li>
-         <li><h5><a href="#">August 2015</a></h5></li>
-         <li><h5><a href="#">July 2015</a></h5></li>
-         <li><h5><a href="#">June 2015</a></h5></li>
-         <li><h5><a href="#">May 2015</a></h5></li>
-         <li><h5><a href="#">April 2015</a></h5></li>
-         <li><h5><a href="#">March 2015</a></h5></li>
-         <li><h5><a href="#">February 2015</a></h5></li>
-         <li><h5><a href="#">January 2015</a></h5></li>
-         <li><h5><a href="#">December 2014</a></h5></li>
-         <li><h5><a href="#">November 2014</a></h5></li>
-         <li><h5><a href="#">October 2014</a></h5></li>
-         <li><h5><a href="#">September 2014</a></h5></li>
-         <li><h5><a href="#">August 2014</a></h5></li>
-         <li><h5><a href="#">July 2014</a></h5></li>
-         <li><h5><a href="#">June 2014</a></h5></li>
-         <li><h5><a href="#">May 2014</a></h5></li>
-         <li><h5><a href="#">April 2014</a></h5></li>
-         <li><h5><a href="#">March 2014</a></h5></li>
-         <li><h5><a href="#">February 2014</a></h5></li>
-         <li><h5><a href="#">December 2013</a></h5></li>
-         <li><h5><a href="#">November 2013</a></h5></li>
+         <li><h5><%= link_to("October 2015", :action => 'october_2015')%></h5></li>
+         <li><h5><%= link_to("September 2015", :action => 'september_2015')%></h5></li>
+         <li><h5><%= link_to("August 2015", :action => 'august_2015')%></h5></li>
+         <li><h5><%= link_to("July 2015", :action => 'july_2015')%></h5></li>
+         <li><h5><%= link_to("June 2015", :action => 'june_2015')%></h5></li>
+         <li><h5><%= link_to("May 2015", :action => 'may_2015')%></h5></li>
+
+         <li><h5><%= link_to("October 2014", :action => 'october_2014')%></h5></li>
+         <li><h5><%= link_to("September 2014", :action => 'september_2014')%></h5></li>
+         <li><h5><%= link_to("August 2014", :action => 'august_2014')%></h5></li>
+         <li><h5><%= link_to("July 2014", :action => 'july_2014')%></h5></li>
+         <li><h5><%= link_to("June 2014", :action => 'june_2014')%></h5></li>
+         <li><h5><%= link_to("May 2014", :action => 'may_2014')%></h5></li>
+
       </ul>
     </div>
   </div>
