@@ -16,6 +16,7 @@ myApp.controller("BlogController", function MyController($scope, $http){
   });
 });
 
+// Filter For Recent Months
 myApp.filter('recentMonths', [function() {
     return function(array) {
         var results   = [],
@@ -35,8 +36,7 @@ myApp.filter('recentMonths', [function() {
     };
 }]);
 
-
-
+// No Future Dates Displayed
 myApp.filter('xFutureDates', [function() {
     return function(array) {
         var results   = [],
@@ -59,16 +59,15 @@ myApp.filter('xFutureDates', [function() {
     };
 }]);
 
-// OCTOBER 2015
-myApp.filter('onlyOctober2015', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            thisYear  = today.getFullYear();
+// ARCHIVES: BY MONTH
+// Blog By Date
+myApp.filter('blogByDate', [function() {
+    return function(array, date) {
+
+        var results   = []
 
         angular.forEach(array, function(item, index) {
-           if (item.month_id === 10 && item.year_id === thisYear) {
+           if (item.date == date) {
             this.push(item);
            }
         }, results);
@@ -77,16 +76,14 @@ myApp.filter('onlyOctober2015', [function() {
     };
 }]);
 
-// SEPTEMBER 2015
-myApp.filter('onlySeptember2015', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            thisYear      = today.getFullYear();
+// Blog By Month and Year
+myApp.filter('blogByMonthYear', [function() {
+    return function(array, month_year) {
+
+        var results   = []
 
         angular.forEach(array, function(item, index) {
-           if (item.month_id === 9 && item.year_id === thisYear) {
+           if (item.month_year == month_year) {
             this.push(item);
            }
         }, results);
@@ -95,16 +92,14 @@ myApp.filter('onlySeptember2015', [function() {
     };
 }]);
 
-// AUGUST 2015
-myApp.filter('onlyAugust2015', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            thisYear      = today.getFullYear();
+// Blog By Category
+myApp.filter('blogByCategory', [function() {
+    return function(array, category) {
+
+        var results   = []
 
         angular.forEach(array, function(item, index) {
-           if (item.month_id === 8 && item.year_id === thisYear) {
+           if (item.category.includes(category)) {
             this.push(item);
            }
         }, results);
@@ -112,177 +107,6 @@ myApp.filter('onlyAugust2015', [function() {
         return results;
     };
 }]);
-
-// JULY 2015
-myApp.filter('onlyJuly2015', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            thisYear      = today.getFullYear();
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 7 && item.year_id === thisYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// JUNE 2015
-myApp.filter('onlyJune2015', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            thisYear      = today.getFullYear();
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 6 && item.year_id === thisYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// MAY 2015
-myApp.filter('onlyMay2015', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            thisYear      = today.getFullYear();
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 5 && item.year_id === thisYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// OCTOBER 2014
-myApp.filter('onlyOctober2014', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            lastYear      = today.getFullYear() - 1;
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 10 && item.year_id === lastYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// SEPTEMBER 2014
-myApp.filter('onlySeptember2014', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            lastYear      = today.getFullYear() - 1;
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 9 && item.year_id === lastYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// AUGUST 2014
-myApp.filter('onlyAugust2014', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            lastYear      = today.getFullYear() - 1;
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 8 && item.year_id === lastYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// JULY 2014
-myApp.filter('onlyJuly2014', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            lastYear      = today.getFullYear() - 1;
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 7 && item.year_id === lastYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// JUNE 2014
-myApp.filter('onlyJune2014', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            lastYear      = today.getFullYear() - 1;
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 6 && item.year_id === lastYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-// MAY 2014
-myApp.filter('onlyMay2014', [function() {
-    return function(array) {
-        var results   = [],
-            today     = new Date(),
-            thisMonth = (today.getMonth() + 1),
-            lastYear      = today.getFullYear() - 1;
-
-        angular.forEach(array, function(item, index) {
-           if (item.month_id === 5 && item.year_id === lastYear) {
-            this.push(item);
-           }
-        }, results);
-
-        return results;
-    };
-}]);
-
-
-
-
-
-
-
-
-
 
 
 

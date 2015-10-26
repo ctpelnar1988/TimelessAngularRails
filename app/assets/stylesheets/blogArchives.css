@@ -1,0 +1,18 @@
+.default_blogArchives_heading {
+}
+
+.default_blogArchives_date {
+margin-top: 2em;
+}
+
+.default_blogArchives_title {
+  font-size: 1.1em;
+  margin-top: -0.5em;
+  color: #0F8591;
+  letter-spacing: 0.03em;
+  background-color: black;
+  padding: 0.5em;
+}
+
+.default_blogArchives_description {
+}
