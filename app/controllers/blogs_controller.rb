@@ -1,6 +1,10 @@
 class BlogsController < ApplicationController
 
+  before_action :confirm_logged_in, :except => [:login]
 
+  def login
+    redirect_to(:action => 'login', :controller => 'users')
+  end
 
   def index
   end
@@ -17,5 +21,6 @@ class BlogsController < ApplicationController
   def show_page
     @date = params[:date]
   end
+
 
 end

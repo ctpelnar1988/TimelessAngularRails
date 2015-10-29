@@ -1,0 +1,35 @@
+.category_page_heading {
+  text-shadow: 0px 0px 9px black;
+}
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .category_page_heading {
+    font-size: 5em;
+  }
+
+  .default_blogArchives_date {
+    font-size: 2em;
+  }
+
+  .default_blogArchives_title {
+    font-size: 2em;
+  }
+
+  .default_blogArchives_description {
+    font-size: 2em;
+  }
+
+  .category_page_link {
+    font-size: 1.5em;
+  }
+}

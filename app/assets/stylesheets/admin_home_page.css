@@ -1,0 +1,27 @@
+.admin_page_heading {
+  text-shadow: 0px 0px 9px black;
+}
+
+
+
+
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .admin_page_heading {
+    font-size: 5em;
+    margin-bottom: 1em;
+  }
+
+  .admin_logout, .customer_messages_heading, .admin_message_display {
+    font-size: 2em;
+  }
+
+.admin_message_display {
+  margin-bottom: 0.5em;
+}
+
+
+}

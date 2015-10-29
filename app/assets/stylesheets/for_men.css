@@ -1,3 +1,5 @@
+/*Mobile/Default*/
+
 .for_men_header {
   text-shadow: 0px 0px 9px black;
 }
@@ -35,4 +37,24 @@ a.morelink {
 }
 .morecontent span {
   display: none;
+}
+
+
+
+
+/*Tablet*/
+
+@media(min-width: 768px) and (max-width: 1024px){
+  .for_men_header {
+    font-size: 5em;
+  }
+
+  .for_men_procedure_title {
+    font-size: 2.5em;
+  }
+
+  .for_men_procedure_description {
+    letter-spacing: 0.05em;
+    font-size: 1.8em;
+  }
 }

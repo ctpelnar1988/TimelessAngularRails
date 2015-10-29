@@ -1,0 +1,25 @@
+.blog_page_date {
+  text-shadow: 0px 0px 9px black;
+}
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog_page_date {
+    font-size: 2em;
+    margin-bottom: -1em;
+  }
+
+  .blog_page_title {
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    padding: 1em;
+  }
+
+  .blog_page_description {
+    font-size: 2em;
+  }
+
+}

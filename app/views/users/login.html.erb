@@ -1,0 +1,29 @@
+  <div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-sm-2"></div>
+      <div class="col-xs-12 col-sm-8">
+        <h3 class="blog_login_header">Login</h3>
+        <h5 class="blog_login_under_header">to view blog posts</h5>
+        <br>
+        <%= form_tag(:action => "attempt_login") do %>
+        <%= label_tag(:email, nil, class: "default_blog_login_label") %>
+        <br>
+        <%= text_field_tag(:email, nil, class: "default_blog_login_input", :placeholder => " Email", :autofocus => true, :required => true) %>
+        <br>
+        <%= label_tag(:password, nil, class: "default_blog_login_label") %>
+        <br>
+        <%= password_field_tag(:password, nil, class: "default_blog_login_input", :placeholder => " Password", :required => true) %>
+        <br>
+        <br>
+        <%= submit_tag('Login', :class => "blog_login_submit")%>
+        <br>
+        <br>
+        <% end %>
+<h3 class="blog_login_or_text">Or</h3>
+    <%= link_to "Signup", {:action => "new"}, class: "blog_login_signup_link" %>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>

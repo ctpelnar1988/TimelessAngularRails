@@ -1,0 +1,25 @@
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog_signup_header {
+    font-size: 5em;
+    margin-bottom: 1em;
+  }
+
+  .default_blog_signup_label {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+  .default_blog_signup_input, .blog_signup_submit {
+    width: 100%;
+    padding: 1em;
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+
+  .blog_signup_submit {
+    color: #00FFF3;
+    background-color: grey;
+  }
+}

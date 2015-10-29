@@ -33,3 +33,38 @@ table {
 .vip_price {
   font-size: 1.3em;
 }
+
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media(min-width: 768px) and (max-width: 1024px){
+  .vip_header {
+    font-size: 5em;
+  }
+
+  table, th, td {
+    border: 0.3em solid black;
+  }
+
+  th, td {
+    font-size: 1.8em;
+  }
+
+  .gold_membership_th {
+    font-size: 2em;
+  }
+
+  .platinum_membership_th {
+    font-size: 2em;
+  }
+
+  .vip_price {
+    font-size: 2.5em;
+  }
+}

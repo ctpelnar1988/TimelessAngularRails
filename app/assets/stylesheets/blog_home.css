@@ -1,3 +1,5 @@
+/*Mobile/Default*/
+
 .blogs_home_heading {
   text-shadow: 0px 0px 9px black;
 }
@@ -70,4 +72,91 @@
   background-color: black;
   color: white;
   padding: 0.5em;
+}
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .user_session_signedInAs_txt {
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .user_session_email {
+    word-wrap: break-word;
+  }
+
+  .blog_home_logout {
+    font-size: 2em;
+  }
+
+  .search_blogs_heading {
+    font-size: 5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .search_blogs_label {
+    font-size: 2em;
+  }
+
+  .search_blogs_input {
+    width: 100%;
+    padding: 1em;
+    font-size: 2em;
+  }
+
+  .blog_search_div {
+    margin-top: -0.7em;
+  }
+
+  .blog_search_date {
+    font-size: 2em;
+  }
+
+  .blog_search_title {
+    font-size: 2em;
+  }
+
+  .recent_blogs_heading {
+    font-size: 5em;
+  }
+
+  .blog_recentBlogs_date {
+    font-size: 2em;
+  }
+
+  .blog_recentBlogs_title {
+    font-size: 2em;
+  }
+
+  .blog_recentBlogs_description {
+    font-size: 2em;
+  }
+
+  .blog_index_heading {
+    font-size: 2em;
+  }
+
+  .blog_category_links {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .blog_months_links {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .archives_index_blog_title {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
 }

@@ -22,24 +22,31 @@
 
 <div class="container-fluid contact_form_container">
   <div class="row text-center">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
       <%= form_for(@message) do |f| %>
       <%= f.label :name, :class => "message_default_label" %><br>
-      <%= f.text_field :name, :class => "message_default_input", :placeholder => " Name", :autofocus => true %>
+      <%= f.text_field :name, :class => "message_default_input", :placeholder => " Name", :autofocus => true, :required => true %>
       <br>
       <br>
       <%= f.label :email, :class => "message_default_label" %><br>
-      <%= f.text_field :email, :class => "message_default_input", :placeholder => " Email" %>
+      <%= f.text_field :email, :class => "message_default_input", :placeholder => " Email", :required => true %>
       <br>
       <br>
       <%= f.label :phone_number, :class => "message_default_label" %><br>
-      <%= f.text_field :phone_number, :class => "message_default_input", :placeholder => " Phone Number" %>
+      <%= f.text_field :phone_number, :class => "message_default_input", :placeholder => " Phone Number", :required => true %>
       <br>
       <br>
       <%= f.label :question, :class => "message_default_label" %><br>
-      <%= f.text_area :user_message, :class => "message_user_message_input", :placeholder => " Question" %>
+      <%= f.text_area :user_message, :class => "message_user_message_input", :placeholder => " Question", :required => true %>
+      <br>
+      <br>
+      <%= f.label :prove_youre_not_a_robot, :class => "message_default_label" %><br>
+      <%= f.text_field :captcha, :class => "message_default_input", :placeholder => "#{@a} + #{@b} = ?"  %>
       <br>
       <br>
       <%= f.submit "Send", :class => "contact_send_button" %>
       <% end %>
+    </div>
   </div>
 </div>

@@ -1,7 +1,28 @@
+/*Mobile/Default*/
+
 .media_header {
   text-shadow: 0px 0px 9px black;
 }
 
 .over_media_description_div {
   margin-top: 2em;
+}
+
+
+
+
+/*Tablet*/
+
+@media(min-width: 768px) and (max-width: 1024px){
+  .media_header {
+    font-size: 5em;
+  }
+
+  .over_media_description_div {
+    font-size: 2em;
+  }
+
+  .media_iframe {
+    height: 30em;
+  }
 }

@@ -14,6 +14,9 @@
  *= require_self
  */
 
+
+/*Mobile*/
+
 body {
  font-family: 'Raleway', sans-serif;
 }
@@ -52,7 +55,7 @@ li {
   margin-top: -0.1em;
 }
 
-.glyphicon {
+.nav_glyphicon {
   font-size: 2.9em;
   margin-top: 0.3em;
   color: white;
@@ -95,4 +98,39 @@ li {
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+
+
+
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .nav-menu-dd-text{
+      font-size: 2.5em;
+    }
+
+    .nav_glyphicon {
+      font-size: 6em;
+      margin-top: 0.3em;
+      color: white;
+    }
+
+    .nav_text {
+      font-size: 2.3em;
+    }
+
+    .main_logo_phone_number_row {
+      margin-top: 12em;
+    }
+
+    .phone_number_div{
+      margin-bottom: 1.5em;
+    }
+
+    .phone_number_digits {
+      text-shadow: 0px 0px 25px black;
+      font-size: 2.3em;
+    }
 }

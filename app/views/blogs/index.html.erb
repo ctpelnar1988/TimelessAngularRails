@@ -1,16 +1,37 @@
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-xs-12">
+          <%= link_to('Logout', {:controller => "users", :action => 'destroy'}, :method => :delete, class: "blog_home_logout" ) %>
+          </div>
+        </div>
+      </div>
+
+
 <div ng-controller="BlogController">
+
+
 
   <div class="container-fluid">
     <div class="row text-center">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-sm-12">
+        <h4 class="user_session_signedInAs_txt">
+          Signed in as:
+          <span class="user_session_email"><%= session[:email] %></span>
+        </h4>
+        <h4>
+        </h4>
         <h4 class="search_blogs_heading">Search Blogs</h4>
-        <h6>Enter "title" or "date"</h6>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <h6 class="search_blogs_label">Enter "title" or "date"</h6>
         <input type="text" class="search_blogs_input" ng-model="search_blogs" placeholder=" Title or Date" autofocus>
       </div>
     </div>
     <div class="row">
-     <div class="col-xs-12">
-      <div class="col-xs-12 blog_search_div" ng-repeat="blog in blogs | filter: search_blogs | xFutureDates | limitTo: 15" ng-show="search_blogs">
+      <div class="col-sm-2"></div>
+      <div class="col-xs-12 col-sm-8">
+      <div class="blog_search_div" ng-repeat="blog in blogs | filter: search_blogs | xFutureDates | limitTo: 15" ng-show="search_blogs">
         <br>
         <br>
         <a href="/blog_page?date={{blog.date}}">
@@ -18,9 +39,9 @@
           <p class="blog_search_title">{{blog.title}}</p>
         </a>
       </div>
-     </div>
     </div>
-  </div>
+    </div>
+    </div>
 
   <div class="container-fluid">
     <div class="row">
@@ -53,11 +74,11 @@
       <div class="row text-center">
       <h4 class="blog_index_heading">Recent Blogs</h4>
     </div>
-    <div class="row">
+    <div class="row text-center">
       <div class="col-xs-12">
         <div ng-repeat="blog in blogs | recentMonths | limitTo:10">
           <a href="/blog_page?date={{blog.date}}">
-            <h6>{{blog.title}}</h6>
+            <h6 class="archives_index_blog_title">{{blog.title}}</h6>
           </a>
         </div>
       </div>
@@ -66,27 +87,29 @@
       <h4 class="blog_index_heading">Categories</h4>
   </div>
   <div class="row text-center">
-    <div class="col-xs-12">
-      <h6><a href="/blog_category_archive?category='Body Contouring'">Body Contouring</a></h6>
-      <h6><a href="/blog_category_archive?category='Breast Reduction Liposuction'">Breast Reduction Liposuction</a></h6>
-      <h6><a href="/blog_category_archive?category='Breast Reduction Surgery'">Breast Reduction Surgery</a></h6>
-      <h6><a href="/blog_category_archive?category='Cosmetic Surgery'">Cosmetic Surgery</a></h6>
-      <h6><a href="/blog_category_archive?category='Cosmetic Surgery Procedures'">Cosmetic Surgery Procedures</a></h6>
-      <h6><a href="/blog_category_archive?category='Facelift'">Facelift</a></h6>
-      <h6><a href="/blog_category_archive?category='Fat Grafting'">Fat Grafting</a></h6>
-      <h6><a href="/blog_category_archive?category='Gynecomastia'">Gynecomastia</a></h6>
-      <h6><a href="/blog_category_archive?category='Infographics'">Infographics</a></h6>
-      <h6><a href="/blog_category_archive?category='Laser Lift'">Laser Lift</a></h6>
-      <h6><a href="/blog_category_archive?category='Laser Liposuction'">Laser Liposuction</a></h6>
-      <h6><a href="/blog_category_archive?category='Liposuction'">Liposuction</a></h6>
-      <h6><a href="/blog_category_archive?category='Liposuction Surgery'">Male Breast Reduction</a></h6>
-      <h6><a href="/blog_category_archive?category='Neck Liposuction'">Neck Liposuction</a></h6>
-      <h6><a href="/blog_category_archive?category='Non-Invasive Procedures'">Non-Invasive Procedures</a></h6>
-      <h6><a href="/blog_category_archive?category='Plastic Surgeons'">Plastic Surgeons</a></h6>
-      <h6><a href="/blog_category_archive?category='Plastic Surgery'">Plastic Surgery</a></h6>
-      <h6><a href="/blog_category_archive?category='SmartLipo'">SmartLipo</a></h6>
-      <h6><a href="/blog_category_archive?category='SmartLipo Triplex'">SmartLipo Triplex</a></h6>
-      <h6><a href="/blog_category_archive?category='Weight Loss'">Weight Loss</a></h6>
+    <div class="col-xs-12 col-sm-12">
+      <div class="blog_category_div">
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Body Contouring'">Body Contouring</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Breast Reduction Liposuction'">Breast Reduction Liposuction</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Breast Reduction Surgery'">Breast Reduction Surgery</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Cosmetic Surgery'">Cosmetic Surgery</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Cosmetic Surgery Procedures'">Cosmetic Surgery Procedures</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Facelift'">Facelift</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Fat Grafting'">Fat Grafting</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Gynecomastia'">Gynecomastia</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Infographics'">Infographics</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Laser Lift'">Laser Lift</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Laser Liposuction'">Laser Liposuction</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Liposuction'">Liposuction</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Liposuction Surgery'">Male Breast Reduction</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Neck Liposuction'">Neck Liposuction</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Non-Invasive Procedures'">Non-Invasive Procedures</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Plastic Surgeons'">Plastic Surgeons</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Plastic Surgery'">Plastic Surgery</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='SmartLipo'">SmartLipo</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='SmartLipo Triplex'">SmartLipo Triplex</a></h6>
+      <h6 class="blog_category_links"><a href="/blog_category_archive?category='Weight Loss'">Weight Loss</a></h6>
+    </div>
     </div>
   </div>
 </div>
@@ -98,18 +121,18 @@
   </div>
   <div class="row text-center">
     <div class="col-xs-12">
-      <h6><a href="/blog_month_archive?month_year='October 2015'">October 2015</a></h6>
-      <h6><a href="/blog_month_archive?month_year='September 2015'">September 2015</a></h6>
-      <h6><a href="/blog_month_archive?month_year='August 2015'">August 2015</a></h6>
-      <h6><a href="/blog_month_archive?month_year='July 2015'">July 2015</a></h6>
-      <h6><a href="/blog_month_archive?month_year='June 2015'">June 2015</a></h6>
-      <h6><a href="/blog_month_archive?month_year='May 2015'">May 2015</a></h6>
-      <h6><a href="/blog_month_archive?month_year='October 2014'">October 2014</a></h6>
-      <h6><a href="/blog_month_archive?month_year='September 2014'">September 2014</a></h6>
-      <h6><a href="/blog_month_archive?month_year='August 2014'">August 2014</a></h6>
-      <h6><a href="/blog_month_archive?month_year='July 2014'">July 2014</a></h6>
-      <h6><a href="/blog_month_archive?month_year='June 2014'">June 2014</a></h6>
-      <h6><a href="/blog_month_archive?month_year='May 2014'">May 2014</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='October 2015'">October 2015</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='September 2015'">September 2015</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='August 2015'">August 2015</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='July 2015'">July 2015</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='June 2015'">June 2015</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='May 2015'">May 2015</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='October 2014'">October 2014</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='September 2014'">September 2014</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='August 2014'">August 2014</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='July 2014'">July 2014</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='June 2014'">June 2014</a></h6>
+      <h6 class="blog_months_links"><a href="/blog_month_archive?month_year='May 2014'">May 2014</a></h6>
     </div>
   </div>
 </div>

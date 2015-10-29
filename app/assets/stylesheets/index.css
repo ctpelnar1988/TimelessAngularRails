@@ -1,6 +1,4 @@
-
-
-
+/*Mobile*/
 .index_page_hero_img {
   width: 100%;
   position: relative;
@@ -43,4 +41,38 @@
 
 .timeless_office_image {
   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mission_statement_text_top {
+    font-size: 2.5em;
+  }
+
+  .mission_statement_text_bottom {
+    font-size: 4em;
+  }
+
+  .mission_statement_message {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .under_mission_statement_message {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+
+  .timeless_office_image {
+    margin-bottom: 1em;
+  }
 }

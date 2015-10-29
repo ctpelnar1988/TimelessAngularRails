@@ -1,0 +1,15 @@
+.month_page_heading {
+  text-shadow: 0px 0px 9px black;
+}
+
+
+
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width:  1024px) {
+  .month_page_heading {
+    font-size: 5em;
+  }
+}

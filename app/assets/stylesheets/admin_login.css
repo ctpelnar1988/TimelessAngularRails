@@ -1,0 +1,36 @@
+.admin_login_heading {
+  text-shadow: 0px 0px 9px black;
+}
+
+
+
+
+
+
+
+
+/*Tablet*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .admin_login_heading {
+    font-size: 5em;
+    margin-bottom: 1em;
+  }
+
+  .admin_login_default_label {
+    font-size: 2em;
+  }
+
+  .admin_login_default_input, .admin_login_submit {
+    width: 100%;
+    padding: 1em;
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+
+  .admin_login_submit {
+    color: #00FFF3;
+    background-color: grey;
+    margin-top: 1.5em;
+  }
+}
