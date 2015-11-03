@@ -1,7 +1,7 @@
 
 var myApp = angular.module('myApp', []);
 
-myApp.controller("BlogController", function MyController($scope, $http){
+myApp.controller("BlogController", function BlogController($scope, $http){
   $http.get('/assets/blogs.json').success(function(data){
     $scope.blogs = data;
 
@@ -27,8 +27,10 @@ myApp.filter('recentMonths', [function() {
             thisYear  = today.getFullYear();
 
         angular.forEach(array, function(item, index) {
-           if (item.month_id === lastMonth || item.month_id === thisMonth && item.year_id === thisYear && item.day_id <= thisDay) {
+           if (item.month_id === thisMonth && item.year_id === thisYear && item.day_id <= thisDay) {
                this.push(item);
+           } else if (item.month_id === lastMonth && item.year_id === thisYear ){
+              this.push(item);
            }
         }, results);
 
@@ -43,12 +45,13 @@ myApp.filter('xFutureDates', [function() {
             today     = new Date(),
             thisDay   = today.getDate(),
             thisMonth = (today.getMonth() + 1),
-            lastMonth = today.getMonth(),
-            thisYear      = today.getFullYear();
+            thisYear  = today.getFullYear();
 
         angular.forEach(array, function(item, index) {
-           if (item.month_id === thisMonth && item.year_id === thisYear && item.day_id > thisDay) {
-            null;
+           if (item.month_id >= thisMonth && item.year_id === thisYear && item.day_id > thisDay) {
+            return null;
+           } else if(item.month_id > thisMonth && item.year_id >= thisYear){
+            return null
            } else {
 
             this.push(item);

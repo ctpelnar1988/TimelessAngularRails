@@ -7,7 +7,6 @@
 .blog_search_div {
   background-color: #D3BFBF;
   margin-top: -0.3em;
-  border-radius: 4px;
 }
 
 .search_blogs_heading {
@@ -20,6 +19,7 @@
 
 .blog_search_date {
   color: black;
+  text-shadow: 0px 0px 9px black;
 }
 
 .blog_search_title {
@@ -75,14 +75,27 @@
 }
 
 
-
+@media (min-width: 0px) and (max-width: 767px) {
+    .soothingCandleImage_div {
+    display: none;
+  }
+}
 
 
 
 
 /*Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .soothingCandleImage_div {
+    display: none;
+  }
+
+  .blog_home_logout {
+    font-size: 2em;
+  }
+
   .user_session_signedInAs_txt {
     font-size: 2em;
     margin-top: 1em;
@@ -91,10 +104,6 @@
 
   .user_session_email {
     word-wrap: break-word;
-  }
-
-  .blog_home_logout {
-    font-size: 2em;
   }
 
   .search_blogs_heading {
@@ -134,7 +143,7 @@
   }
 
   .blog_recentBlogs_title {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .blog_recentBlogs_description {
@@ -159,4 +168,56 @@
     font-size: 2em;
     margin-bottom: 1em;
   }
+
+    .blogs_index {
+    margin-top: 10em;
+    margin-bottom: 5em;
+  }
+}
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .blog_home_logout, .user_session_signedInAs_txt, .search_blogs_label, .blog_search_date, .blog_search_title, .blog_recentBlogs_date, .blog_recentBlogs_title, .blog_recentBlogs_description {
+    font-size: 1.5em;
+  }
+
+  .user_session_signedInAs_txt {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .search_blogs_label {
+    margin-top: 1em;
+  }
+
+  .blog_search_div {
+    margin-top: -0.7em;
+  }
+
+  .blog_index_heading {
+    width: 100%
+  }
+
+  .blogs_index {
+    margin-top: 10em;
+    margin-bottom: 5em;
+  }
+
+  .blog_category_links, .blog_months_links, .archives_index_blog_title {
+    font-size: 1.2em;
+  }
+
+  .soothingSpaCandle_image, .soothingSpaCandle_image_02, .soothingSpaCandle_image_03 {
+    width: 100%;
+  }
+
+  .soothingSpaCandle_image_02, .soothingSpaCandle_image_03 {
+    margin-top: 1em;
+  }
+
 }

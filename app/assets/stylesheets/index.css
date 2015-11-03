@@ -46,6 +46,16 @@
 
 
 
+/* Min-width 620px */
+@media (min-width: 620px) and (max-width: 767px){
+  .mission_statement_message {
+    font-size: 1.5em;
+  }
+
+  .under_mission_statement_message {
+    font-size: 1.7em;
+  }
+}
 
 
 
@@ -53,7 +63,7 @@
 
 /*Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .mission_statement_text_top {
     font-size: 2.5em;
   }
@@ -69,6 +79,34 @@
 
   .under_mission_statement_message {
     font-size: 3em;
+    margin-bottom: 1em;
+  }
+
+  .timeless_office_image {
+    margin-bottom: 1em;
+  }
+}
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+
+  .mission_statement_text_top {
+    font-size: 2.5em;
+  }
+
+  .mission_statement_text_bottom {
+    font-size: 4em;
+  }
+
+  .mission_statement_message {
+    font-size: 2.3em;
+    margin-bottom: 1em;
+  }
+
+  .under_mission_statement_message {
+    font-size: 2.5em;
     margin-bottom: 1em;
   }
 

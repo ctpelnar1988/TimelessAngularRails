@@ -12,7 +12,7 @@
 
 /*Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .category_page_heading {
     font-size: 5em;
   }

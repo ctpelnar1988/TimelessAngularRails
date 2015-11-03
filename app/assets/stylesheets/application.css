@@ -85,7 +85,6 @@ li {
 .phone_number_div {
   background-color: grey;
   font-family: 'Playfair Display', serif;
-  font-size: 1.5em;
 }
 
 .phone_number_digits {
@@ -105,14 +104,14 @@ li {
 
 
 /*Tablet*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     .nav-menu-dd-text{
-      font-size: 2.5em;
+      font-size: 2.3em;
     }
 
     .nav_glyphicon {
-      font-size: 6em;
+      font-size: 4em;
       margin-top: 0.3em;
       color: white;
     }
@@ -133,4 +132,46 @@ li {
       text-shadow: 0px 0px 25px black;
       font-size: 2.3em;
     }
+}
+
+
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+
+  .glyphicon {
+    display: none;
+  }
+
+  .js-menu-dd {
+
+  }
+
+  .nav-menu-dd-text{
+    font-size: 1.5em;
+  }
+
+  .nav_text {
+    font-size: 2em;
+    margin-top: 0.5em;
+  }
+
+  .main_logo_phone_number_row {
+    margin-top: 8em;
+  }
+
+  .phone_number_div{
+    margin-bottom: 2em;
+  }
+
+  .phone_number_digits {
+    text-shadow: 0px 0px 25px black;
+    font-size: 2em;
+  }
+
 }

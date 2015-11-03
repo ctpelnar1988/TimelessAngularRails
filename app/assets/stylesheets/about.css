@@ -53,7 +53,7 @@
 
 /*Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .about_header {
     font-size: 5em;
   }
@@ -82,4 +82,48 @@
   .about_memberships_text {
     font-size: 1.8em;
   }
+}
+
+
+
+
+
+
+
+/*Desktop*/
+
+
+@media (min-width: 992px) {
+
+
+  .about_header {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+
+  .about_page_top_info_header {
+    font-size: 2em;
+  }
+
+  .about_description_1 {
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-size: 1.5em;
+  }
+
+  .about_description_2 {
+    letter-spacing: 0.05em;
+    word-spacing: 0.05em;
+    font-size: 1.5em;
+  }
+
+  .about_memberships_header {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+  }
+
+  .about_memberships_text {
+    font-size: 1.5em;
+  }
+
 }

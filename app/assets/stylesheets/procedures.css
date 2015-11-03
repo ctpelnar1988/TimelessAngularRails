@@ -35,7 +35,7 @@
 
 
 /*Tablet*/
-@media (min-width: 768px) and (max-width:1024px){
+@media (min-width: 768px) and (max-width:991px){
   .procedures_heading {
     font-size: 5em;
   }
@@ -47,4 +47,24 @@
   .procedure_price {
     font-size: 3.7em;
   }
+}
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .procedures_heading {
+    margin-bottom: 1em;
+  }
+
+  .procedure_text {
+    font-size: 3em;
+  }
+
+  .procedure_price {
+    font-size: 2em;
+  }
+
 }

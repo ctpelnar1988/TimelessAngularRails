@@ -44,7 +44,7 @@ a.morelink {
 
 /*Tablet*/
 
-@media(min-width: 768px) and (max-width: 1024px){
+@media(min-width: 768px) and (max-width: 991px){
   .for_men_header {
     font-size: 5em;
   }
@@ -57,4 +57,27 @@ a.morelink {
     letter-spacing: 0.05em;
     font-size: 1.8em;
   }
+}
+
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .for_men_header {
+    margin-bottom: 1em;
+  }
+
+  .for_men_procedure_title {
+    font-size: 2em;
+  }
+
+  .for_men_procedure_description {
+    letter-spacing: 0.05em;
+    font-size: 1.5em;
+  }
+
 }

@@ -7,13 +7,13 @@
 }
 
 table, th, td {
-    border: 0.2em solid black;
-    border-collapse: collapse;
+  border: 0.2em solid black;
+  border-collapse: collapse;
 }
 
 th, td {
-    padding: 5px;
-    text-align: left;
+  padding: 5px;
+  text-align: left;
 }
 
 table {
@@ -43,7 +43,7 @@ table {
 
 /*Tablet*/
 
-@media(min-width: 768px) and (max-width: 1024px){
+@media(min-width: 768px) and (max-width: 991px){
   .vip_header {
     font-size: 5em;
   }
@@ -67,4 +67,41 @@ table {
   .vip_price {
     font-size: 2.5em;
   }
+}
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .vip_header {
+    font-size: 5em;
+    margin-top: 1em;
+    margin-bottom: -2em;
+    z-index: 1;
+    position: relative;
+  }
+
+  table, th, td {
+    border: 0.3em solid black;
+  }
+
+  th, td {
+    font-size: 1.8em;
+  }
+
+  .gold_membership_th {
+    font-size: 2em;
+  }
+
+  .platinum_membership_th {
+    font-size: 2em;
+  }
+
+  .vip_price {
+    font-size: 2.5em;
+  }
+
 }

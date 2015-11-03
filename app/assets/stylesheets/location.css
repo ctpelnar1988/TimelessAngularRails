@@ -7,7 +7,7 @@
 
 /*Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .location_heading {
     font-size: 5em;
   }
@@ -29,5 +29,38 @@
     margin-bottom: 2em;
     margin-top: 1em;
     font-size: 1.7em;
+  }
+}
+
+
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .location_heading {
+    margin-bottom: 1em;
+  }
+
+  .location_timeless-esthetics_header {
+    font-size: 1.5em
+  }
+
+  .text-underline {
+    font-size: 1.5em;
+  }
+
+  .location_iframe {
+    height: 60em;
+    margin-bottom: 1em;
+  }
+
+  .location_get_directions {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    font-size: 1.3em;
   }
 }

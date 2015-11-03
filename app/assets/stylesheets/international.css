@@ -23,7 +23,7 @@
 
 /*Tablet*/
 
-@media(min-width: 768px) and (max-width: 1024px){
+@media(min-width: 768px) and (max-width: 991px){
   .international_header {
     font-size: 5em;
   }
@@ -43,5 +43,33 @@
 
   .international_description_text {
     font-size: 1.9em;
+  }
+}
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .international_header {
+  }
+
+  .international_heading_titles {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+
+  .hotel_title {
+    font-size: 1.8em;
+    margin-top: 2em;
+  }
+
+  .international_iframe {
+    height: 40em;
+  }
+
+  .international_description_text {
+    font-size: 1.5em;
   }
 }

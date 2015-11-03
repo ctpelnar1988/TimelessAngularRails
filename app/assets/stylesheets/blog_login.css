@@ -5,7 +5,7 @@
 
 /*Tablet*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .blog_login_header {
     font-size: 5em;
   }
@@ -42,4 +42,31 @@
   }
 
 
+}
+
+
+
+
+
+
+/*Desktop*/
+
+@media (min-width: 992px) {
+  .blog_login_under_header {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .default_blog_login_label {
+    font-size: 1.5em;
+  }
+
+  .blog_login_signup_link {
+    font-size: 2em;
+  }
+
+  .blog_login_submit {
+    color: #00FFF3;
+    background-color: grey;
+  }
 }
