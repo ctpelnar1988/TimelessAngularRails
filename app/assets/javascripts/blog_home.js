@@ -1,6 +1,8 @@
 
 var myApp = angular.module('myApp', []);
 
+
+
 myApp.controller("BlogController", ['$scope', '$http', function($scope, $http){
   $http.get('/assets/blogs.json').success(function(data){
     $scope.blogs = data;
@@ -53,7 +55,7 @@ myApp.filter('xFutureDates', [function() {
         angular.forEach(array, function(item, index) {
            if (item.month_id >= thisMonth && item.year_id === thisYear && item.day_id > thisDay) {
             return null;
-           } else if(item.month_id > thisMonth && item.year_id >= thisYear){
+           } else if(item.month_id > thisMonth && item.year_id >= thisYear || item.year_id > thisYear){
             return null
            } else {
 
