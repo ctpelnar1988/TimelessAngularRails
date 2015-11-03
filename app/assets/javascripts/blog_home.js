@@ -1,7 +1,7 @@
 
 var myApp = angular.module('myApp', []);
 
-myApp.controller("BlogController", function BlogController($scope, $http){
+myApp.controller("BlogController", ['$scope', '$http', function($scope, $http){
   $http.get('/assets/blogs.json').success(function(data){
     $scope.blogs = data;
 
@@ -14,7 +14,10 @@ myApp.controller("BlogController", function BlogController($scope, $http){
     };
 
   });
-});
+}]);
+
+
+myApp.controller("")
 
 // Filter For Recent Months
 myApp.filter('recentMonths', [function() {
