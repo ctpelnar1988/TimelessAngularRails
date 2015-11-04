@@ -102,12 +102,12 @@ myApp.filter('blogByMonthYear', [function() {
 
 // Blog By Category
 myApp.filter('blogByCategory', [function() {
-    return function(array, category) {
+    return function(array, categories) {
 
         var results   = []
 
         angular.forEach(array, function(item, index) {
-           if (item.category.includes(category)) {
+           if (item.category.includes(categories)) {
             this.push(item);
            }
         }, results);
