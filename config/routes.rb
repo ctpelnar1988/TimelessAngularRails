@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :messages
-  resources :users, only: [:new, :create, :destroy]
+  resources :users
 
 
   # Pages:
@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   # Messages:
   get '/contact' => 'messages#new'
   post 'message_sent' => 'messages#create'
+  post 'https://www.google.com/recaptcha/api/siteverify' => 'messages#create'
   get '/message_sent' => 'messages#show'
 
 
