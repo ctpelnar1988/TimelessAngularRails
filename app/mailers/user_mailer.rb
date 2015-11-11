@@ -3,13 +3,13 @@ class UserMailer < ApplicationMailer
 
   def timeless_email(message)
     @message = message
-    @url  = 'https://still-beyond-9340.herokuapp.com'
-    mail(to: 'christopherpelnar@gmail.com', subject: 'Timeless Laser Client Message')
+    @url  = 'http://localhost:3000'
+    mail(to: ENV['gmail_username'], subject: 'Timeless Laser Client Message')
   end
 
   def user_email(message)
     @message = message
-    @url  = 'https://still-beyond-9340.herokuapp.com'
+    @url  = 'http://localhost:3000'
     mail(to: @message.email, subject: 'Timeless Laser Confirmation')
   end
 

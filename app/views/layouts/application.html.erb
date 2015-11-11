@@ -1,112 +1,94 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-<head>
-  <title>TimelessAngularRails</title>
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-  <!-- GOOGLE FONTS -->
-  <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-
-  <%= stylesheet_link_tag    'application'%>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="container-fluid js-menu-dd-container">
-    <div class="row js-menu-dd">
-      <div>
-        <a href="/"><h4 class="nav-menu-dd-text">Home</h4></a>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TimelessAngularRails</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,900' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <%= stylesheet_link_tag    'application'%>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="container-fluid js-menu-dd-container">
+      <div class="row js-menu-dd">
+        <div>
+          <a href="/"><h4 class="nav-menu-dd-text">Home</h4></a>
+        </div>
+        <div>
+          <a href="/about"><h4 class="nav-menu-dd-text">About</h4></a>
+        </div>
+        <div>
+          <a href="/procedures"><h4 class="nav-menu-dd-text">Procedures</h4></a>
+        </div>
+        <div>
+          <a href="/for_men"><h4 class="nav-menu-dd-text">For-Men</h4></a>
+        </div>
+        <div>
+          <a href="/vip"><h4 class="nav-menu-dd-text">Vip Membership</h4></a>
+        </div>
+        <div>
+          <a href="/international"><h4 class="nav-menu-dd-text">International</h4></a>
+        </div>
+        <div>
+          <a href="/media"><h4 class="nav-menu-dd-text">Media</h4></a>
+        </div>
+        <div>
+          <a href="/location"><h4 class="nav-menu-dd-text">Location and Directions</h4></a>
+        </div>
       </div>
-
-      <div>
-        <a href="/about"><h4 class="nav-menu-dd-text">About</h4></a>
+      <div class="row nav_row text-center">
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <span class="nav_glyphicon glyphicon glyphicon-align-justify js-menu-button"></span>
+          <p class="nav_text js-menu-button">Menu</p>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <a href="/contact"><span class="nav_glyphicon glyphicon glyphicon-envelope"></span>
+          <p class="nav_text">Contact</p></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <a href="/blogs_home"><span class="nav_glyphicon glyphicon glyphicon-comment"></span>
+          <p class="nav_text">Blog</p></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3">
+          <a href="/gallery"><span class="nav_glyphicon glyphicon glyphicon-camera"></span>
+          <p class="nav_text">Gallery</p></a>
+        </div>
       </div>
-
-      <div>
-        <a href="/procedures"><h4 class="nav-menu-dd-text">Procedures</h4></a>
-      </div>
-
-      <div>
-        <a href="/for_men"><h4 class="nav-menu-dd-text">For-Men</h4></a>
-      </div>
-
-      <div>
-        <a href="/vip"><h4 class="nav-menu-dd-text">Vip Membership</h4></a>
-      </div>
-
-      <div>
-        <a href="/international"><h4 class="nav-menu-dd-text">International</h4></a>
-      </div>
-
-      <div>
-        <a href="/media"><h4 class="nav-menu-dd-text">Media</h4></a>
-      </div>
-
-      <div>
-        <a href="/location"><h4 class="nav-menu-dd-text">Location and Directions</h4></a>
+      <div class="row border_under_nav"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="row text-center main_logo_phone_number_row">
+        <div class="col-xs-1 col-sm-1 col-md-3"></div>
+        <div class="col-xs-10 col-sm-10 col-md-6">
+          <img class="application_page_main_logo" src="/assets/timelessEstheticsMainLogo.jpg">
+          <div class="phone_number_div">
+            <p class="phone_number_digits">(407)-242-2433</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row nav_row text-center">
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <span class="nav_glyphicon glyphicon glyphicon-align-justify js-menu-button"></span>
-        <p class="nav_text js-menu-button">Menu</p>
-      </div>
-
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <a href="/contact"><span class="nav_glyphicon glyphicon glyphicon-envelope"></span>
-        <p class="nav_text">Contact</p></a>
-      </div>
-
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <a href="/blogs_home"><span class="nav_glyphicon glyphicon glyphicon-comment"></span>
-        <p class="nav_text">Blog</p></a>
-      </div>
-
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <a href="/gallery"><span class="nav_glyphicon glyphicon glyphicon-camera"></span>
-        <p class="nav_text">Gallery</p></a>
+    <%= yield %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-1 col-sm-1 col-md-2"></div>
+        <div class="col-xs-10 col-sm-10 col-md-8">
+          <img class="venus_freeze_footer" src="/assets/venusFreezeIcon.jpg">
+        </div>
       </div>
     </div>
-    <div class="row border_under_nav"></div>
-  </div>
-
-  <div class="container-fluid">
-  <div class="row text-center main_logo_phone_number_row">
-    <div class="col-xs-1 col-sm-1 col-md-3"></div>
-    <div class="col-xs-10 col-sm-10 col-md-6">
-      <img class="application_page_main_logo" src="/assets/timelessEstheticsMainLogo.jpg">
-      <div class="phone_number_div">
-        <p class="phone_number_digits">(407)-242-2433</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<%= yield %>
-
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-1 col-sm-1 col-md-2"></div>
-    <div class="col-xs-10 col-sm-10 col-md-8">
-      <img class="venus_freeze_footer" src="/assets/venusFreezeIcon.jpg">
-    </div>
-  </div>
-</div>
-
-<!-- JavaScript -->
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  <%= javascript_include_tag 'application'%>
-</body>
+    <!-- JavaScript -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'application'%>
+  </body>
 </html>
